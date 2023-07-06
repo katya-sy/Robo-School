@@ -1,0 +1,30 @@
+.hero {
+  padding-top: 274px;
+  min-height: 900px;
+  background-color: var(--dark-color);
+
+  &__container {
+    @include flex;
+  }
+
+  &__content {
+    max-width: 516px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+    color: var(--light-color);
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 160%;
+
+    &-text {
+      max-width: 90%;
+      display: block;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+}
