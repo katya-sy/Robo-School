@@ -1,0 +1,43 @@
+.order {
+  background-image: url('../img/percents.png');
+
+  padding: 87px 0;
+  background-color: var(--accent-color);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__left {
+    grid-column: 5 span;
+    padding-left: 60px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--light-color);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &__desc {
+    margin: 0;
+    color: var(--light-color);
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__right {
+    display: flex;
+    grid-column: 7 span;
+    justify-content: flex-end;
+    padding-right: 60px;
+  }
+
+  &__form {
+    max-width: 500px;
+  }
+}

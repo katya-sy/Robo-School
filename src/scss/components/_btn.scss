@@ -9,4 +9,8 @@
   font-size: 18px;
   line-height: 160%;
   padding: 25px 54px;
+
+  &--dark {
+    background-color: var(--dark-color);
+  }
 }
