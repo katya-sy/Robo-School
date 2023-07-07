@@ -1,14 +1,18 @@
 .hero {
-  padding-top: 274px;
+  padding-top: 162px;
   min-height: 900px;
   background-color: var(--dark-color);
 
   &__container {
-    @include flex;
+    @include flex-v-center;
   }
 
   &__content {
     max-width: 516px;
+  }
+
+  &__image {
+    transform: translateX(167px);
   }
 
   &__title {
