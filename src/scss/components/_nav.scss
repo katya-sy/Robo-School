@@ -15,4 +15,8 @@
     font-size: 20px;
     line-height: 160%;
   }
+
+  @include high-tablet {
+    display: none;
+  }
 }
