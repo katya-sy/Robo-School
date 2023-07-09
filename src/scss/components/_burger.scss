@@ -1,20 +1,28 @@
 .burger {
-  width: 44px;
-  height: 44px;
-  background-image: url(../../img/burger.svg);
+  display: none;
+
+  @include high-tablet {
+    width: 44px;
+    height: 44px;
+    background-image: url(../../img/burger.svg);
+  }
 }
 
 
 .burger-close {
-  position: absolute;
-  right: var(--container-offset);
-  top: 30px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  width: 44px;
-  height: 44px;
-  background-image: url(../../img/close.svg);
-  background-position: center;
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
+  display: none;
+
+  @include high-tablet {
+    position: absolute;
+    right: var(--container-offset);
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    width: 44px;
+    height: 44px;
+    background-image: url(../../img/close.svg);
+    background-position: center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+  }
 }

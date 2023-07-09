@@ -1,0 +1,152 @@
+.graph-modal__close {
+  right: 40px;
+  top: 40px;
+  width: auto;
+  height: auto;
+  color: var(--text-color);
+  text-align: right;
+  font-size: 18px;
+  line-height: 160%;
+  background-image: none;
+
+  @include mobile {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.graph-modal {
+  &::before {
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.popup {
+  padding: 40px;
+  width: 100%;
+  max-width: 940px;
+
+  &__top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__image {
+    margin-right: 40px;
+
+    @include mobile {
+      margin-right: 20px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 160%;
+  }
+
+  &__post {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  &__bottom-content {
+    padding-right: 20px;
+    max-height: 375px;
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--dark-color);
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 160%;
+  }
+
+  .simplebar-track.simplebar-vertical {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    width: 5px;
+    background: rgba(20, 16, 36, 0.08);;
+  }
+
+  .simplebar-scrollbar::before {
+    content: '';
+    left: 0;
+    right: 0;
+    border-radius: 40px;
+    width: 5px;
+    opacity: 1;
+    background: var(--dark-color);
+  }
+
+  @include small-tablet {
+    padding-top: 80px;
+  }
+
+  @include mobile {
+    padding: 20px;
+  }
+}
+
+.tabs {
+  &__menu {
+    border-bottom: solid 1px rgba(20, 16, 36, 0.11);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+
+    &-item {
+      @include mobile {
+        margin-right: 40px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-btn {
+      color: var(--dark-color);
+      font-size: 20px;
+      line-height: 160%;
+
+      &:focus {
+        color: var(--accent-color);
+        background-color: transparent;
+      }
+
+      &--active {
+        outline: none;
+        color: var(--accent-color);
+        background-color: transparent;
+      }
+    }
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+}
