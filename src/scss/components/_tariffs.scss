@@ -9,6 +9,10 @@
     @include high-tablet {
       gap: 20px;
     }
+
+    @include small-tablet {
+      grid-template-columns: repeat(8, 1fr);
+    }
   }
 
   &__item {
@@ -40,6 +44,10 @@
       @include high-desktop {
         transform: scale(1);
       }
+    }
+
+    @include small-tablet {
+      grid-column: 8 span;
     }
   }
 
